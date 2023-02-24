@@ -11,39 +11,40 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕𝐌ə𝐧𝐢 𝐪𝐫𝐮𝐩𝐚 ə𝐥𝐚𝐯ə 𝐞𝐭➕", url=f"http://t.me/Ceka_SozTap_Bot?startgroup=new")
+        InlineKeyboardButton("➕𝐌ə𝐧𝐢 𝐪𝐫𝐮𝐩𝐚 ə𝐥𝐚𝐯ə 𝐞𝐭➕", url=f"http://t.me/XAOS_Gamebot?startgroup=new")
     ],
     [
-        InlineKeyboardButton(" 𝐎𝐰𝐧𝐞𝐫🇦🇿 ", url="t.me/Ceka_18"),
-        InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="t.me/CekaSup"),
+        InlineKeyboardButton(" 𝐎𝐰𝐧𝐞𝐫 🇦🇿 ", url="t.me/sesizKOLGE"),
+        InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="t.me/XaosResmii"),
     ]
 ])
 
 
-START = """
-**🔮 Salam, Ceka Söz Bota xoş gəldin bu bot ilə söz tapmaq oyunu oynaya bilərsiniz..**
+START = f"""
+**👋 Salam {message.from_user.name}\n𝕏𝔸𝕆𝕊 𝔾𝔸𝕄𝔼 Söz Oyun Botuna xoş gəldin.**\n🤖** Bu Bot İlə Qarışıq Həriflərdən İbarət Söz Tapmaq Oyunu Oynaya Bilərsiniz..**
 
-➤ Məlumat üçün 👉 /help üzərinə klikləyin.  Əmrlər asan və sadədir.
+➤ Oyun Qaydaları üçün 👉 /help Üzərinə Klikləyin. 📚 Əmrlər Asan və Sadədir.
 """
 
-HELP = """
-**✌️ Əmrlər menyusuna xoş gəlmisiniz.**
+HELP = f"""
+**{message.from_user.name} Əmrlər menyusuna xoş gəldin.**
 
 
-/oyna - Söz tap oyunu başladır.. 
-/kec - sözü keçər.
-/reytinq - Oyunçular arasında rəqabət məlumatları..
-/dayan - söz tap oyununu dayandırar.
+✅ /start - Botu Başladar..
+🎮 /oyna - Söz Tap Oyunu Başladar.. 
+➡️ /kec - Növbəti Sözə Keçər..
+🏆 /reytinq - Oyunçular Arasında Qrup reyrinqi..
+⛔ /dayan - Söz Tap Oyununu Sonlandırar
 """
 
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://telegra.ph/file/fbae3dc2b7e5c3863c1d5.jpg",caption=START,reply_markup=keyboard)
+  await message.reply_photo("https://telegra.ph/file/7770592d74a8bf3236382.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-  await message.reply_photo("https://telegra.ph/file/fbae3dc2b7e5c3863c1d5.jpg",caption=HELP) 
+  await message.reply_photo("https://telegra.ph/file/7770592d74a8bf3236382.jpg",caption=HELP) 
 
 # Oyunu başlat. 
 @Client.on_message(filters.command("oyna")) 
@@ -57,7 +58,7 @@ async def kelimeoyun(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        await m.reply("**❗ Qrupunuzda  oyun artıq davam edir ✍🏻 \n Oyunu dayandırmaq üçün /dayan yaza bilərsiniz")
+        await m.reply("**❗ Hal-Hazırda Qrupunuzda  Oyun Davam Edir ✍🏻 \n Oyunu Sonlandırmaq Üçün /dayan Əmrindəm İsdifadə Edin")
     else:
         await m.reply(f"**{m.from_user.mention}** Tərəfindən! \nSöz Tapma Oyunu Başladı .\n\nUğurlar !", reply_markup=kanal)
         
@@ -81,7 +82,7 @@ async def kelimeoyun(c:Client, m:Message):
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq hərflərdən ibarət sözü tapın 
+✏️ Qarışıq Hərflərdən İbarət Sözü Tapın 
         """
         await c.send_message(m.chat.id, text)
         
