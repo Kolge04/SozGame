@@ -42,12 +42,12 @@ HELP = f"""
 async def start(bot, message):
   await message.reply_photo("https://telegra.ph/file/7770592d74a8bf3236382.jpg",caption=START,reply_markup=keyboard)
 
-@Client.on_message(filters.command("help", ["." ,"!" ,"/" ,"@"]))
+@Client.on_message(filters.command("help", [".", "!", "/", "@"]))
 async def help(bot, message):
   await message.reply_photo("https://telegra.ph/file/7770592d74a8bf3236382.jpg",caption=HELP) 
 
 # Oyunu başlat. 
-@Client.on_message(filters.command("oyna", "!" ,"/" ,"@"])) 
+@Client.on_message(filters.command("oyna", ["!", "/", "@", "."])) 
 async def kelimeoyun(c:Client, m:Message):
     global oyun
     aktif = False
