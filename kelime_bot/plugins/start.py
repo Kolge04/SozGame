@@ -20,14 +20,14 @@ keyboard = InlineKeyboardMarkup([
 ])
 
 
-START = f"""
-**👋 Salam {message.from_user.name}\n𝕏𝔸𝕆𝕊 𝔾𝔸𝕄𝔼 Söz Oyun Botuna xoş gəldin.**\n🤖** Bu Bot İlə Qarışıq Həriflərdən İbarət Söz Tapmaq Oyunu Oynaya Bilərsiniz..**
+START = """
+**👋 Salam 𝕏𝔸𝕆𝕊 𝔾𝔸𝕄𝔼 Söz Oyun Botuna xoş gəldin.**\n🤖** Bu Bot İlə Qarışıq Həriflərdən İbarət Söz Tapmaq Oyunu Oynaya Bilərsiniz..**
 
 ➤ Oyun Qaydaları üçün 👉 /help Üzərinə Klikləyin. 📚 Əmrlər Asan və Sadədir.
 """
 
-HELP = f"""
-**{message.from_user.name} Əmrlər menyusuna xoş gəldin.**
+HELP = """
+** Əmrlər menyusuna xoş gəldin.**
 
 
 ✅ /start - Botu Başladar..
