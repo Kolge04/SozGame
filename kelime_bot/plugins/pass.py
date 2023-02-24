@@ -8,7 +8,7 @@ from kelime_bot import *
 
 
 
-@Client.on_message(filters.command("kec") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("kec", "!" ,"/" ,"@"]) & ~filters.private & ~filters.channel)
 async def passs(c:Client, m:Message):
     global oyun
     
@@ -21,7 +21,7 @@ async def passs(c:Client, m:Message):
     if aktif:
         if oyun[m.chat.id]["kec"] < 30:
             oyun[m.chat.id]["kec"] += 1
-            await c.send_message(m.chat.id,f"❗ Sizin tam yol haqqınız var!\n➡️ sözü kecdim !\n✏️ Doğru söz : **<code>{oyun[m.chat.id]['kelime']}</code>**")
+            await c.send_message(m.chat.id,f"✅ Sizin Tam Yol Haqqınız Var!\n➡️ Növbəti sözə Keçdim !\n✏️ Doğru söz : **<code>{oyun[m.chat.id]['kelime']}</code>**")
             
             oyun[m.chat.id]["kelime"] = kelime_sec()
             oyun[m.chat.id]["aktif"] = True
@@ -40,7 +40,7 @@ async def passs(c:Client, m:Message):
 🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 𝖴𝗓𝗎𝗇𝗅uq: {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq hərflərdən ibarət sözü tapın 
+✏️ Qarışıq Hərflərdən İbarət Sözü Tapın 
             """
             await c.send_message(m.chat.id, text)
             
