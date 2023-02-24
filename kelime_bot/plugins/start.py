@@ -33,7 +33,7 @@ HELP = """
 ✅ /start - Botu Başladar..
 🎮 /oyna - Söz Tap Oyunu Başladar.. 
 ➡️ /kec - Növbəti Sözə Keçər..
-🏆 /reytinq - Oyunçular Arasında Qrup reyrinqi..
+🏆 /reyting - Qruplar Üzrə Oyunçu Reyrinqi
 ⛔ /dayan - Söz Tap Oyununu Sonlandırar
 """
 
