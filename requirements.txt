@@ -19,8 +19,7 @@ asyncio
 wget 
 
 ffmpeg-python
-speedtest-cli
-Pillow
+
 ujson
 psutil
 future
