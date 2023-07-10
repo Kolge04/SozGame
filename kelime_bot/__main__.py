@@ -1,4 +1,6 @@
-from kelime_bot import kolge
+from kelime_bot import kolge as app
 
-if __name__ == "__main__":
-    kolge.run()
+ 
+app.start()
+LOGGER.info(f"Uğurla Başladı Sahibim ")
+idle()
