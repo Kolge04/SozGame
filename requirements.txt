@@ -2,3 +2,6 @@ pyrogram
 tgcrypto
 telethon
 python-dotenv
+telethon
+cryptg
+requests
