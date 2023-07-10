@@ -1,5 +1,5 @@
 from os import getenv
-from kelime_bit.config import Config
+from kelime_bot.config import Config
 from telethon import TelegramClient
 from time import sleep
 import logging
