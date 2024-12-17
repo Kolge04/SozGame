@@ -1,4 +1,4 @@
-
+"""
 # @sesizKOLGE
 # Sahib @sesizKOLGE
 # Repo Açığdısa İcazəsis Götürmə Oğlum
@@ -52,4 +52,6 @@ async def handler(event):
  
  
 
-                   
+
+		  
+"""
