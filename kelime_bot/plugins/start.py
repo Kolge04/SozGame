@@ -1,4 +1,4 @@
-e
+
 # @sesizKOLGE
 # Sahib @sesizKOLGE
 # Repo Açığdısa İcazəsis Götürmə Oğlum
