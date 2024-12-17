@@ -1,4 +1,4 @@
-
+"""
 # @sesizKOLGE
 # Sahib @sesizKOLGE
 # Repo Açığdısa İcazəsis Götürmə Oğlum
@@ -23,3 +23,5 @@ def ids(_, message):
         message.reply(
             f"**👤 Sənin ID**: `{message.from_user.id}`\n**🗨 Qrup ID**: `{message.chat.id}`"
         )
+
+"""
