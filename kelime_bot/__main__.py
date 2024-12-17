@@ -2,7 +2,7 @@ import wget
 import os, requests, time
 from kelime_bot.config import Config
 from pyrogram.handlers import MessageHandler
-from pyrogram import Client, filters
+from pyrogram import Client, filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery 
 from kelime_bot import pxaos as bot
 from kelime_bot import LOGGER
