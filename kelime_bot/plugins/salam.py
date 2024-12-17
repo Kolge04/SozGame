@@ -1,7 +1,7 @@
 
 import telethon, asyncio
 from telethon import TelegramClient, events
-from AylinRobot import xaos as client
+from kelime_bot import txaos as client
  
 @client.on(events.NewMessage(pattern='salam'))
 @client.on(events.NewMessage(pattern='Salam'))
