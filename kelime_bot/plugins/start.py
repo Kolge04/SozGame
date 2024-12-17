@@ -1,3 +1,11 @@
+
+# @sesizKOLGE
+# Sahib @sesizKOLGE
+# Repo Açığdısa İcazəsis Götürmə Oğlum
+# Oz adina cixardanin anasin sikim
+# hecneye el vurma bele isled !
+
+
 import random, os, logging, asyncio
 from telethon import Button
 from telethon import TelegramClient, events
