@@ -44,7 +44,7 @@ async def handler(event):
 			     
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):
-    await event.edit(f"⚡ {Config.BOT_NAME} İn Əmrləri \n\n➪ /chatbot on ChatBot u Başladar\n➪ /chatbot off ChatBot u Dayandırar\n➪ /link_close on Atılan linkləri və Mobil Nömrələri Silər\n➪ /link_close off Link Silmə Özəlliyin Bağlayar /start - Botu Başladar", buttons=(
+    await event.edit(f"⚡ {Config.BOT_NAME} İn Əmrləri \n\n➪/start - Botu Başladar\n➪/chatbot on ChatBot u Başladar\n➪ /chatbot off ChatBot u Dayandırar\n➪ /link_close on Atılan linkləri və Mobil Nömrələri Silər\n➪ /link_close off Link Silmə Özəlliyin Bağlayar\n➪ /ID ID Verer", buttons=(
                       [Button.url('➕ QRUPA ƏLAVƏ ET ➕', 'https://t.me/{Config.BOT_USERNAME}?startgroup=a')],
                       [Button.inline("◀ GERİ", data="start")],
                     ),
