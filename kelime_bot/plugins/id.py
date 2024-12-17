@@ -5,7 +5,7 @@
 # Oz adina cixardanin anasin sikim
 # hecneye el vurma bele isled !
 
-from AylinRobot import AylinRobot as app
+from kelime_bot import pxaos as app
 from pyrogram import Client, filters
 import pyrogram
 from pyrogram.errors import FloodWait
