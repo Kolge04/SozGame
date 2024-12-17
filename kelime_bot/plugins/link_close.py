@@ -7,8 +7,8 @@ from telethon import Button
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
 from telethon import TelegramClient, events
-from AylinRobot import xaos
-from AylinRobot.config import Config
+from kelime_bot import txaos as xaos
+from kelime_bot.config import Config
 
 
  
