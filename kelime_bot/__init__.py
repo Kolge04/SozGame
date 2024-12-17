@@ -26,7 +26,7 @@ LOGGER = logging.getLogger(__name__)
  
  # KOLGE 
 pxaos = Client(
-    'AylinRobot',
+    'Pxaos',
     bot_token = Config.BOT_TOKEN,
     api_id = Config.API_ID,
     api_hash = Config.API_HASH
@@ -37,6 +37,6 @@ api_id = Config.API_ID
 api_hash = Config.API_HASH
 bot_token = Config.BOT_TOKEN
  
-txaos = TelegramClient('Xaos', api_id, api_hash).start(bot_token=bot_token)
+txaos = TelegramClient('Txaos', api_id, api_hash).start(bot_token=bot_token)
 
 
