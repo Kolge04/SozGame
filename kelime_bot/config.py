@@ -8,5 +8,6 @@ class Config:
    BOT_USERNAME = os.environ.get("BOT_USERNAME", "") # BOT-TAG ADIN YAZ
    OWNER_ID = int(os.environ.get("OWNER_ID","")) # OZ ID NI YAZ
    OWNER_NAME = os.environ.get("OWNER_NAME", "sesizKOLGE") # OZ TAG ADINI YAZ
-   SUPPORT = os.environ.get("SUPPORT", "") # SPORT KANALI YAZ
+   KANAL = os.environ.get("KANAL", "") #  KANALIN TAGİN YAZ
+   KANAL_ADI = os.environ.get("KANAL", "") #  KANALIN ADIN YAZ
    BOT_NAME = os.environ.get("BOT_NAME", "") # BOT ADINI YAZ
