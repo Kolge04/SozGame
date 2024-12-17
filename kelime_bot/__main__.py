@@ -5,7 +5,7 @@ from pyrogram.handlers import MessageHandler
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery 
 from kelime_bot import pxaos as bot
-
+from kelime_bot import LOGGER
 
 
 
