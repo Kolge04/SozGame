@@ -7,9 +7,9 @@ from telethon import Button
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
 from telethon import TelegramClient, events
-from AylinRobot import xaos
+from kelime_bot import txaos
 from mesaj.chat import salam, necesen, getdim, geldim, sesizKOLGE, ban, emoji1, emoji2, fed, niye, ne, hay, mal, can, balam, xos, hara, gel, gordum
-from AylinRobot.config import Config
+from kelime_bot.config import Config
 
 
 
