@@ -1,3 +1,8 @@
+# @sesizKOLGE
+# Sahib @sesizKOLGE
+# Repo Açığdısa İcazəsis Götürmə Oğlum
+# Oz adina cixardanin anasin sikim
+# hecneye el vurma bele isled !
 
 import random
 import os
