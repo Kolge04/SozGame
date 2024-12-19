@@ -114,7 +114,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "Sahib 🇦🇿", url=f"https://t.me/{Config.Config}")
+            "Sahib 🇦🇿", url=f"https://t.me/{Config.OWNER_NAME}")
         ]
       ]
      ))
