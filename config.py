@@ -11,3 +11,4 @@ class Config:
    KANAL = os.environ.get("KANAL", "sesizKOLGE") #  KANALIN TAGİN YAZ
    KANAL_ADI = os.environ.get("KANAL", "♥🌹💸") #  KANALIN ADIN YAZ
    BOT_NAME = os.environ.get("BOT_NAME", "𝕏𝔸𝕆𝕊 ℂℍ𝔸𝕋 𝔹𝕆𝕋") # BOT ADINI YAZ
+   START_IMG = os.environ.get("START_IMG", "https://files.catbox.moe/9iztzk.jpg") # START SEKLIN YAZ 
