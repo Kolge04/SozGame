@@ -123,7 +123,7 @@ async def cbbilgi(_, query: CallbackQuery):
 
 @bot.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**👋Salam {message.from_user.mention}\n💬Mən {} Rəsmi Chat botuyam Söhbət Botuyam.\nℹ Məlumat Üçün 🧩 Əmirlər Butonuna Toxun\n👉 Sahibim @{Config.OWNER_NAME}**""",
+    await query.edit_message_text(f"""**👋Salam {message.from_user.mention}\n💬Mən {Config.BOT_NAME} Rəsmi Chat botuyam Söhbət Botuyam.\nℹ Məlumat Üçün 🧩 Əmirlər Butonuna Toxun\n👉 Sahibim @{Config.OWNER_NAME}**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
