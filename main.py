@@ -367,8 +367,8 @@ async def chatbot(event):
 
 
 
-@client.on(events.NewMessage(pattern='salam'))
-@client.on(events.NewMessage(pattern='Salam'))
+@xaos.on(events.NewMessage(pattern='salam'))
+@xaos.on(events.NewMessage(pattern='Salam'))
 async def bilgi(event):
     
     a = await event.reply("👋 Salam Aleykuma..")
