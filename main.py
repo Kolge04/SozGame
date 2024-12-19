@@ -79,7 +79,7 @@ xaos = TelegramClient('Txaos', api_id, api_hash).start(bot_token=bot_token)
 async def start(_, message: Message):
                 await message.reply_photo(
                 f"{Config.START_IMG}",
-                caption=(f"""**👋Salam {message.from_user.mention}\n💬Mən {BOT_NAME} Rəsmi Chat botuyam Söhbət Botuyam.\nℹ Məlumat Üçün 🧩 Əmirlər Butonuna Toxun\n👉 Sahibim @{Config.OWNER_NAME}**"""),
+                caption=(f"""**👋Salam {message.from_user.mention}\n💬Mən {Config.BOT_NAME} Rəsmi Chat botuyam Söhbət Botuyam.\nℹ Məlumat Üçün 🧩 Əmirlər Butonuna Toxun\n👉 Sahibim @{Config.OWNER_NAME}**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
