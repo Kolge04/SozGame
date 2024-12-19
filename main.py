@@ -1,10 +1,14 @@
+_______________________________________________
+# @sesizKOLGE                                  |
+# Sahib @sesizKOLGE                            |
+# Repo Açığdısa İcazəsis Götürmə Oğlum         |
+# Oz adina cixardanin anasin sikim             |
+# hecneye el vurma bele isled !                |
+_______________________________________________
 
-# @sesizKOLGE
-# Sahib @sesizKOLGE
-# Repo Açığdısa İcazəsis Götürmə Oğlum
-# Oz adina cixardanin anasin sikim
-# hecneye el vurma bele isled !
 
+
+from config import Config
 from time import sleep
 import logging
 from dotenv import load_dotenv, set_key, unset_key
