@@ -78,13 +78,13 @@ xaos = TelegramClient('Txaos', api_id, api_hash).start(bot_token=bot_token)
 @bot.on_message(filters.command("start"))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://te.legra.ph/file/7c24db2c84218935a8ac4.jpg",
-                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən əsli söhbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yetkisi verib, Asistanı qrupa əlavə edin.\n\nSahibim👉 )**"""),
+                f"{Config.START_IMG}",
+                caption=(f"""**👋Salam {message.from_user.mention}\n💬Mən {BOT_NAME} Rəsmi Chat botuyam Söhbət Botuyam.\nℹ Məlumat Üçün 🧩 Əmirlər Butonuna Toxun\n👉 Sahibim @{Config.OWNER_NAME}**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/Morfin_Music_Bot?startgroup=true"
+                        "➕ ❰  Məni Qrupa Əlavə Et  ❱ ➕", url=f"https://t.me/{Config.BOT_USERNAME}?startgroup=true"
                     )
                 ],
                 
@@ -93,7 +93,7 @@ async def start(_, message: Message):
                         "🧩 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Rəsmi Kanal ", url=f"https://t.me/UlviiBlogs"
+                        "Rəsmi Kanal ", url=f"https://t.me/{Config.KANAL}"
                     )
                 ]
                 
@@ -104,7 +104,7 @@ async def start(_, message: Message):
 
 @bot.on_callback_query(filters.regex("cbbilgi"))
 async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text("/song (musiqi adı)\n/video (video adı)\n/lyrics (musiqi adı)", 
+    await query.edit_message_text(f"{Config.BOT_NAME} İsdifadə Qaydaları\n\n/chatbot on - Söhbət Botun Aktiv Edər ✔\n/chatbot off - Söhbət Botun Deaktiv Edər\n/link_close [on / off]- Qrupa atılan icazəsiz linkləri silər✔\n/id - İD Məlumatların Atar 🆔\n\nSalam yazıldıqda Maraqlı Cavab verər)", 
     reply_markup=InlineKeyboardMarkup(
       [
         
@@ -114,7 +114,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "Sahib 🇦🇿", url="https://t.me/nnn")
+            "Sahib 🇦🇿", url=f"https://t.me/{Config.Config}")
         ]
       ]
      ))
@@ -123,12 +123,12 @@ async def cbbilgi(_, query: CallbackQuery):
 
 @bot.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Salam {query.from_user.mention} **""",
+    await query.edit_message_text(f"""**👋Salam {message.from_user.mention}\n💬Mən {} Rəsmi Chat botuyam Söhbət Botuyam.\nℹ Məlumat Üçün 🧩 Əmirlər Butonuna Toxun\n👉 Sahibim @{Config.OWNER_NAME}**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/Morfint?startgroup=true"
+                        "➕ ❰  Məni Qrupa Əlavə Et  ❱ ➕", url=f"https://t.me/{Config.BOT_USERNAME}?startgroup=true"
                     )
                 ],
                 
@@ -137,7 +137,7 @@ async def cbstart(_, query: CallbackQuery):
                         "🧩 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Rəsmi Kanal ", url=f"https://t.me/UBlogs"
+                        "Rəsmi Kanal ", url=f"https://t.me/{Config.KANAL}"
                     )
                 ]
                 
